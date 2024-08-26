@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 60px;
+    border-bottom: 1px solid black;
+}
+
+#na {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    font-size: larger;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+}
+
+.back {
+    background-image: url(./white_bg_forms.jpg);
+    background-size: 100%;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 150px;
+    margin-right: 150px;
+    gap: 30px;
+}
+
+.main-left img {
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.main-right {
+    width: 800px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.transaction-form {
+    margin-bottom: 30px;
+}
+
+.transaction-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.transaction-form label {
+    margin-top: 10px;
+}
+
+.transaction-form input, .transaction-form select {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#but {
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.transactions-table {
+    margin-top: 30px;
+}
+
+.transactions-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions-table th, .transactions-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.transactions-table th {
+    background-color: #f4f4f4;
+}

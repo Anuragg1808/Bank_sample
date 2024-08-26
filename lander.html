@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="lander.css">
 
     <script>
-        function redirectToBankCreateform(){
-            window.location.href=''
+        function redirectToCardform(){
+            window.location.href='card_management.html';
+        }
+        function redirectToTransactionform(){
+            window.location.href='transaction.html';
+        }
+        function redirectToAuthenticate(){
+            window.location.href='user_auth.html';
         }
     </script>
 
@@ -39,19 +45,19 @@
         <div class="container">
             
             <div class="service-card">
-                <img src="./personal-banking_2535056.png" alt="Personal Banking">
-                <h3><a class="btn" onclick="redirectToBankCreateform()">Personal Banking</a></h3>
-                <p>Experience seamless personal banking with our comprehensive solutions tailored to your needs.</p>
+                <img src="./auth_pro.png" alt="Personal Banking">
+                <h3><a class="btn" onclick="redirectToAuthenticate()">Authentication</a></h3>
+                <p>Safely access and manage your account with advanced security and easy-to-use tools. Keep your finances secure and under control effortlessly.</p>
             </div>
             <div class="service-card">
-                <img src="./buisness_bank.png" alt="Business Banking">
-                <h3><a href="business_banking_form.html" class="btn">Business Banking</a></h3>
-                <p>Empower your business with our innovative banking services designed to help you grow.</p>
+                <img src="./tra_prof.png" alt="Business Banking">
+                <h3><a class="btn" onclick="redirectToTransactionform()">Transaction</a></h3>
+                <p>Effortlessly track and manage all your transactions with real-time updates and detailed insights. Stay on top of your spending and ensure accuracy with ease.</p>
             </div>
             <div class="service-card">
-                <img src="./inv_ser.png" alt="Investment Services">
-                <h3><button>Investment Services</button></h3>
-                <p>Grow your wealth with our expert investment strategies and financial planning.</p>
+                <img src="./card-payment_2472129.png" alt="Investment Services">
+                <h3><a class="btn" onclick="redirectToCardform()">Card Management</a></h3>
+                <p>Easily manage your cards, including activation, spending limits, and transaction alerts. Keep your card details updated and secure with just a few clicks.</p>
             </div>
         </div>
     </section>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Management</title>
+    <link rel="stylesheet" href="./transaction.css">
+</head>
+<body>
+    <nav id="na">
+        <marquee behavior="" direction=""><h1>Welcome To Sudeeksha Banking!!</h1></marquee>
+    </nav>
+    <div class="back">
+    <div class="nav">
+        <h1>Transaction Management</h1>
+        <p>Manage your transactions below!</p>
+    </div>
+    
+    <div class="main-section">
+        <div class="main-left">
+            <img src="./transaction.png" alt="Banking Image">
+        </div>
+        <div class="main-right">
+            <div class="transaction-form">
+                <h2>Perform a Transaction</h2>
+                <form>
+                    <label for="account_id">Account ID:</label>
+                    <input type="text" id="account_id" placeholder="Enter Account ID">
+
+                    <label for="transaction_type">Transaction Type:</label>
+                    <select id="transaction_type">
+                        <option value="deposit">Deposit</option>
+                        <option value="withdrawal">Withdrawal</option>
+                        <option value="transfer">Transfer</option>
+                        <option value="bill_payment">Bill Payment</option>
+                        <option value="utility_payment">Utility Payment</option>
+                        <option value="direct_debit">Direct Debit</option>
+                        <option value="standing_order">Standing Order</option>
+                        <option value="foreign_exchange">Foreign Exchange</option>
+                    </select>
+
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" placeholder="Enter Amount">
+
+                    <label for="transaction_date">Transaction Date:</label>
+                    <input type="date" id="transaction_date">
+
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" placeholder="Type Your Description">
+
+                    <button type="submit" id="but">Submit Transaction</button>
+                </form>
+            </div>
+
+            <div class="transactions-table">
+                <h2>Transaction History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Account ID</th>
+                            <th>Transaction Type</th>
+                            <th>Amount</th>
+                            <th>Transaction Date</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example Row -->
+                        <tr>
+                            <td>1</td>
+                            <td>12345</td>
+                            <td>Deposit</td>
+                            <td>$500</td>
+                            <td>2024-08-21</td>
+                            <td>Initial deposit</td>
+                        </tr>
+                        <!-- More rows will be populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

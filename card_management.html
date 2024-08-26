@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Management</title>
+    <link rel="stylesheet" href="./card_management.css">
+</head>
+<body>
+    <nav id="na">
+        <marquee behavior="" direction=""><h1>Welcome To Sudeeksha Banking!!</h1></marquee>
+    </nav>
+    <div class="back">
+    <div class="nav">
+        <h1>Card Management</h1>
+        <p>Manage Your Cards Here!</p>
+    </div>
+    <div class="main-section">
+        <div class="main-left">
+            <img src="./payment-service_17389252.png" alt="Banking Image">
+        </div>
+        <div class="main-right">
+            <form>
+                <div class="a1">
+                    <input type="text" placeholder="Card ID" id="card_id">
+                    <input type="text" placeholder="Customer ID" id="customer_id">
+                </div>
+                <div class="a2">
+                    <select id="card_type">
+                        <option value="" disabled selected>Select Card Type</option>
+                        <option value="debit">Debit</option>
+                        <option value="credit">Credit</option>
+                    </select>
+                </div>
+                <div class="a1" >
+                    <input type="text" placeholder="Card Number" id="card_number">
+                </div>
+                <div class="a1">
+                    <input type="text" placeholder="Expiry Date (MM/YY)" id="expiry_date">
+                    <input type="text" placeholder="CVV" id="cvv">
+                </div>
+                <div class="a2">
+                    <select id="status">
+                        <option value="" disabled selected>Select Status</option>
+                        <option value="active">Active</option>
+                        <option value="blocked">Blocked</option>
+                    </select>
+                </div>
+                <br>
+                <button id="but" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
